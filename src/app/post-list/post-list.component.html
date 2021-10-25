@@ -1,0 +1,10 @@
+
+<ng-container *ngFor="let post of allPosts">
+    <app-one-post [thepost]="post"></app-one-post>
+
+</ng-container>
+<br/>
+<br/>
+Title: <input type="text" [(ngModel)]="posttitle"><br/>
+Thoughts: <input type="text" [(ngModel)]="postthoughts">
+<button (click)="onSubmit()">Post</button>
